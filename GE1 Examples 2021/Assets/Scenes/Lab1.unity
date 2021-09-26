@@ -43,7 +43,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 11
+  serializedVersion: 12
   m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -118,6 +118,8 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
@@ -197,6 +199,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!4 &1090498051
@@ -325,8 +328,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e99b205814add3c4596e46ec2e1f70e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loops: 10
-  prefab: {fileID: 4048890447712918444, guid: 2bc4b0f0c6dd37d4fa70e35247aee4d2, type: 3}
+  prefab: {fileID: 1189136996679861981, guid: 8197ac837f3207d4493e05f4506209e0, type: 3}
+  radius: 1
+  points: 6
+  cirNum: 10
 --- !u!4 &2034337706
 Transform:
   m_ObjectHideFlags: 0
